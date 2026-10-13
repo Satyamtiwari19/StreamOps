@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StreamOps | Watch Something Great</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="#">StreamOps</a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#catalog">Movies</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <p class="eyebrow">YOUR NEXT FAVORITE WATCH</p>
+      <h1>Stories worth<br>staying in for.</h1>
+      <p class="hero-text">
+        Discover something new. Find your next favorite.
+      </p>
+      <a class="primary-button" href="#catalog">Explore Library</a>
+    </section>
+
+    <section class="catalog" id="catalog">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">CURATED FOR YOU</p>
+          <h2>Explore the library</h2>
+        </div>
+        <span id="result-count">3 titles</span>
+      </div>
+
+      <input
+        id="search"
+        type="search"
+        placeholder="Search movies..."
+        aria-label="Search movies"
+      >
+
+      <div class="filters">
+        <button class="filter active" data-category="All">All</button>
+        <button class="filter" data-category="Adventure">Adventure</button>
+        <button class="filter" data-category="Nature">Nature</button>
+        <button class="filter" data-category="Animation">Animation</button>
+      </div>
+
+      <div class="movie-grid" id="movie-grid"></div>
+      
+<div class="video-player" id="video-section" hidden>
+  <h2 id="video-title">Now Playing</h2>
+  <video id="video-player" controls width="100%">
+    Your browser does not support video playback.
+  </video>
+</div>
+
+      <p id="empty-message" hidden>No titles found. Try another search.</p>
+    </section>
+
+    <section class="about" id="about">
+      <p class="eyebrow">BUILT AS A DEVOPS PROJECT</p>
+      <h2>From local code to cloud deployment.</h2>
+      <p>
+        StreamOps is a learning project exploring frontend development,
+        AWS hosting, infrastructure as code and automated deployments.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>StreamOps · A personal learning project</p>
+  </footer>
+</body>
+</html>
